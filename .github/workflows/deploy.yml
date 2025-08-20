@@ -3,7 +3,7 @@ name: Deploy TO S3 And Invalidate Cloudfront
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   deploy:
