@@ -31,3 +31,6 @@ jobs:
 
       - name: S3에 빌드된 파일 업로드하기
         run: aws s3 cp ./dist s3://tmddbs2-web/ --recursive
+
+      - name: Cloudfront 캐시 무효화
+        run: aws cloudfront create-invalidation --distribution-id E26KORHTZUAJWG --paths "/*"
