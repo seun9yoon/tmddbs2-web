@@ -30,4 +30,4 @@ jobs:
 
       - name: S3 기존 파일들 전체 삭제
         run: |
-        aws s3 rm --recursive s3://tmddbs2-web
+          aws s3 rm --recursive s3://tmddbs2-web
