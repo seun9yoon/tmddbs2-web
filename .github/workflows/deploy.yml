@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     #하나의 job은 여러개의 step으로 이루어져있다.
-    step:
+    steps:
       - name: Hello World 출력하기
         run: echo "Hello World"
