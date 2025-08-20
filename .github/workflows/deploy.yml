@@ -22,5 +22,6 @@ jobs:
       - name: 디버깅
         run: |
           ls
+          echo "-------------"
           cd dist
           ls
