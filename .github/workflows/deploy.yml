@@ -1,0 +1,17 @@
+#Workflow
+name: Github Actions 실행시켜보기
+
+on:
+  push:
+    brnches:
+      -main
+
+#WOrkflow는 여러개의 job으로 이루어질 수 있고
+jobs:
+  My-Deploy-Job:
+    runs-on: ubuntu-latest
+
+    #하나의 job은 여러개의 step으로 이루어져있다.
+    step:
+      - name: Hello World 출력하기
+        run: echo "Hello World"
